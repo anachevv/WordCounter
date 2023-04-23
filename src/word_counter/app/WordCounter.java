@@ -10,6 +10,7 @@ public class WordCounter extends JFrame implements ActionListener {
     JTextArea textArea;
     JButton btn;
     JScrollPane scrollPane;
+    ImageIcon icon;
 
     WordCounter() {
         // App Initialization
@@ -20,6 +21,8 @@ public class WordCounter extends JFrame implements ActionListener {
         this.setLayout(null);
         this.getContentPane().setBackground(new Color(0xDCDCDC));
         this.setResizable(false);
+        icon = new ImageIcon("./././images/icon.png");
+        this.setIconImage(icon.getImage());
 
         // Text Area
         textArea = new JTextArea("Text here...");
