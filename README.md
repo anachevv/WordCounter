@@ -3,5 +3,5 @@
 <h2>Application</h2>
 <img src="https://raw.githubusercontent.com/anachevv/WordCounter/main/images/app.jpg">
 <img src="https://raw.githubusercontent.com/anachevv/WordCounter/main/images/result.jpg">
-<h3>Usage</h3>
+<h2>Usage</h2>
 <p>NB! Before running, make sure you have changed the icon path!</p>
