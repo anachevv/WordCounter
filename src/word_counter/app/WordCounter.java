@@ -44,7 +44,6 @@ public class WordCounter extends JFrame implements ActionListener {
         this.add(scrollPane);
         this.add(label1);
         this.add(label2);
-//        this.add(textArea);
         this.add(btn);
         this.setVisible(true);
     }
