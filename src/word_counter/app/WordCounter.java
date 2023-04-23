@@ -7,8 +7,9 @@ import java.awt.event.ActionListener;
 
 public class WordCounter extends JFrame implements ActionListener {
     JLabel label1, label2;
-    JButton btn;
     JTextArea textArea;
+    JButton btn;
+    JScrollPane scrollPane;
 
     WordCounter() {
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -22,7 +23,11 @@ public class WordCounter extends JFrame implements ActionListener {
         textArea = new JTextArea("Text here...");
         textArea.setBounds(25, 90, 725, 300);
         textArea.setFont(new Font("Arial", Font.PLAIN, 14));
+        textArea.setLineWrap(true);
+        textArea.setWrapStyleWord(true);
 
+        scrollPane = new JScrollPane(textArea);
+        scrollPane.setBounds(25, 90, 725, 300);
         // Labels
         label1 = new JLabel("Words: ");
         label1.setBounds(25, 25, 200, 50);
@@ -36,9 +41,10 @@ public class WordCounter extends JFrame implements ActionListener {
 
         btn.addActionListener(this);
 
-        this.add(textArea);
+        this.add(scrollPane);
         this.add(label1);
         this.add(label2);
+//        this.add(textArea);
         this.add(btn);
         this.setVisible(true);
     }
