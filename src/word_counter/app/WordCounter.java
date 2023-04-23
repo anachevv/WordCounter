@@ -14,7 +14,7 @@ public class WordCounter extends JFrame implements ActionListener {
     WordCounter() {
         // App Initialization
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setSize(800, 600);
+        this.setSize(790, 550);
         this.setTitle("Word Counter App");
         this.setLocationRelativeTo(null);
         this.setLayout(null);
@@ -33,14 +33,16 @@ public class WordCounter extends JFrame implements ActionListener {
 
         // Labels
         label1 = new JLabel("Words: ");
+        label1.setFont(new Font("ArialRounded", Font.BOLD, 20));
         label1.setBounds(25, 25, 200, 50);
         label2 = new JLabel("Characters: ");
-        label2.setBounds(500, 25, 200, 50);
+        label2.setFont(new Font("ArialRounded", Font.BOLD, 20));
+        label2.setBounds(580, 25, 200, 50);
 
         // Button
         btn = new JButton("Check info");
-        btn.setBounds(25, 410, 200, 50);
-        btn.setFont(new Font("Arial", Font.BOLD, 18));
+        btn.setBounds(280, 410, 200, 50);
+        btn.setFont(new Font("ArialRounded", Font.BOLD, 20));
 
         btn.addActionListener(this);
 
