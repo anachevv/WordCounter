@@ -19,6 +19,7 @@ public class WordCounter extends JFrame implements ActionListener {
         this.setLocationRelativeTo(null);
         this.setLayout(null);
         this.getContentPane().setBackground(new Color(0xDCDCDC));
+        this.setResizable(false);
 
         // Text Area
         textArea = new JTextArea("Text here...");
